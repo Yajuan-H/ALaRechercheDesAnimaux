@@ -1,0 +1,71 @@
+﻿@model ALaRechercheDesAnimaux.Models.EditionViewModel
+
+<h1>Creation</h1>
+
+<h4>EditionViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Creation">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EspecesObservees" class="control-label"></label>
+                <br />
+                <input asp-for="EspecesObservees" class="form-control" />
+                <br />
+                <span asp-validation-for="EspecesObservees" class="text-danger"></span>
+                <br />
+
+                <label asp-for="Date" class="control-label"></label>
+                <br />
+                <input asp-for="Date" class="form-control" />
+                <br />
+                <span asp-validation-for="Date" class="text-danger"></span>
+                <br />
+
+                <label asp-for="Commune" class="control-label"></label>
+                <br />
+                <input asp-for="Commune" class="form-control" />
+                <br />
+                <span asp-validation-for="Commune" class="text-danger"></span>
+                <br />
+
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <br />
+                <input asp-for="Email" class="form-control" />
+                <br />
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <br />
+
+                <label asp-for="Nom" class="control-label"></label>
+                <br />
+                <input asp-for="Nom" class="form-control" />
+                <br />
+                <span asp-validation-for="Nom" class="text-danger"></span>
+                <br />
+
+                <label asp-for="Nombre" class="control-label"></label>
+                <br />
+                <input asp-for="Nombre" class="form-control" />
+                <br />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+                <br />
+
+                <label asp-for="Commentaires" class="control-label"></label>
+                <br />
+                <input asp-for="Commentaires" class="form-control" />
+                <br />
+                <span asp-validation-for="Commentaires" class="text-danger"></span>
+                <br />
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Envoyer" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

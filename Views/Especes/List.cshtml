@@ -1,0 +1,22 @@
+﻿@model List<DetailViewModel>
+
+<p>
+	@foreach (var animal in Model)
+	{
+	<p>
+			@animal.NomScientifique
+	</p>
+	<p>
+			@animal.NomCommun
+	</p>
+	<p>
+			@animal.Habitat
+	</p>
+	<p>
+			@animal.Url
+	</p>
+	}
+</p>
+
+
+
